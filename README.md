@@ -1,7 +1,7 @@
 # ELK-stack
 ELK Stack simplest implementation
 
-#*INTRODUCTION*
+# *INTRODUCTION*
 
 If you have not covered the basics before coming to this repository, don't worry. 
 Here's the briefest simplest description:
