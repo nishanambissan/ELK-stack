@@ -1,7 +1,8 @@
 # ELK-stack
 ELK Stack simplest implementation
 
-*INTRODUCTION*
+#*INTRODUCTION*
+
 If you have not covered the basics before coming to this repository, don't worry. 
 Here's the briefest simplest description:
 
@@ -12,7 +13,7 @@ Elastic Search listens to logstash and gets the shipped logs and stores it in an
 
 Kibana visualises your logstash data but listening to the default port for inputs (which is generally Elastic search that runs on default port 9200.) 
 
-*SETUP*
+# *DEV SETUP FOR WINDOWS 7 and above*
 
 To start off with setting up the ELK stack locally, you need 3 things:
 
@@ -28,7 +29,7 @@ https://www.elastic.co/downloads/kibana
 
 I place the unzipped folders on my C drive. You can place them anywhere you like, but I have encountered issues when the directory it lies in has a space (like Program Files for instance). 
 
-*LOGSTASH BIT*
+# *LOGSTASH*
 
 1. Copy over the config file that is in this repo to your logstash
 
@@ -38,13 +39,13 @@ bin/logstash -f logstash-file-input.conf --config.reload.automatic --debug
 
 The debug mode helps you to see which files are being globbed and if your file input plugin is not working, then you can troubleshoot why its not reading from your log files and shipping to Elastic Search
 
-*ELASTIC SEARCH BIT*
+# *ELASTICSEARCH*
 
 1. Run this command from the Elastic search installation directory:
 
 bin/elasticsearch.bat
 
-*KIBANA BIT*
+# *KIBANA*
 
 1. Run this command from the Kibana installation directory:
 
