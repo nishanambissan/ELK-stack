@@ -34,13 +34,14 @@ I place the unzipped folders on my C drive. You can place them anywhere you like
 
 # *LOGSTASH*
 
-1. Copy over the config file that is in this repo to your logstash
+1. Copy over the config file that is in this repo to your logstash installation directory
 
-2. Run this command from Git bash or any command shell you prefer from the logstash directory
+2. Run this command from Git bash or any command shell you prefer from the root logstash directory
 
 bin/logstash -f logstash-file-input.conf --config.reload.automatic --debug
 
-The debug mode helps you to see which files are being globbed and if your file input plugin is not working, then you can troubleshoot why its not reading from your log files and shipping to Elastic Search
+The debug mode helps you to see which files are being watched or 'globbed' as Logstash call it :)
+It helped me a lot to find if your file input plugin is not working, and you can troubleshoot why its not reading from your log files and shipping to Elastic Search and figure out what's wrong in your path. Remember that logstash can remember the logs that have already been 'seen' so it only ships updates and does not read the same file again unless it has new entries or content that is not discovered before.
 
 # *ELASTICSEARCH*
 
