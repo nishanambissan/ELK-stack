@@ -24,8 +24,11 @@ Kibana
 1. Download the latest version of them all from these links:
 
 https://www.elastic.co/downloads/logstash
+
 https://www.elastic.co/downloads/elasticsearch
+
 https://www.elastic.co/downloads/kibana
+
 
 I place the unzipped folders on my C drive. You can place them anywhere you like, but I have encountered issues when the directory it lies in has a space (like Program Files for instance). 
 
